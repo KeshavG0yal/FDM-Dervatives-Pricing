@@ -26,7 +26,6 @@ This project implements various numerical methods to price European-style option
 
 ## Future Enhancements
 
-- Implement additional option types, such as American options.
 - Optimize the finite difference method for better performance and accuracy.
 - Incorporate more advanced machine learning techniques for pricing derivatives.
 - Enhance the user interface for better interaction and visualization of results.
