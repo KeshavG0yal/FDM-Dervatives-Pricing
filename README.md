@@ -1,18 +1,33 @@
-# FDM-Dervatives-Pricing
+# Derivative Pricing Using Finite Difference Method
 
-# Derivatives Pricing Project
+## Project Overview
 
-## Description
-This project implements various methods for pricing financial derivatives, such as options, using numerical methods like the Finite Difference Method (FDM) and Monte Carlo simulations. It also includes the Black-Scholes analytical solution for comparison.
+This project implements various numerical methods to price European-style options using a Finite Difference Method (FDM), Monte Carlo simulation, and the Black-Scholes formula. It aims to provide an understanding of derivative pricing techniques and their application in financial modeling.
 
-## Structure
-- `fdm_pricing.py`: Implements FDM for option pricing.
-- `monte_carlo.py`: Monte Carlo simulations for option pricing.
-- `black_scholes.py`: Black-Scholes model for option pricing.
-- `database.py`: MongoDB integration for saving and retrieving pricing data.
-- `main.py`: Runs the models and compares their outputs.
+## Features
 
-## Installation
-To install dependencies, run:
-```bash
-pip install -r requirements.txt
+- **Finite Difference Method**: Implements a grid-based numerical method to calculate option prices based on partial differential equations. The method discretizes both stock prices and time to solve for option prices at maturity and backtracks to the present value.
+  
+- **Monte Carlo Simulation**: Utilizes stochastic simulation to estimate the price of options by generating random paths for stock prices and calculating the expected payoff based on those paths. This method is particularly useful for pricing complex derivatives.
+
+- **Black-Scholes Model**: Provides a closed-form solution for pricing European options, serving as a benchmark to compare results obtained from numerical methods.
+
+- **Data Storage**: Integrates a MongoDB database to store calculated option prices along with relevant parameters, enabling easy retrieval and analysis of pricing data.
+
+- **Visualization**: Generates plots comparing the results from the different pricing methods, allowing for a visual understanding of how each method performs under varying conditions.
+
+## Technologies Used
+
+- **Python**: The primary programming language for implementing the pricing algorithms.
+- **NumPy**: For efficient numerical operations and handling of arrays.
+- **Pandas**: For data manipulation and storage of option pricing data.
+- **Matplotlib**: For plotting the results of the pricing methods.
+- **MongoDB**: For storing and retrieving calculated option prices and parameters.
+
+## Future Enhancements
+
+- Implement additional option types, such as American options.
+- Optimize the finite difference method for better performance and accuracy.
+- Incorporate more advanced machine learning techniques for pricing derivatives.
+- Enhance the user interface for better interaction and visualization of results.
+
